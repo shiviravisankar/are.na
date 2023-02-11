@@ -11,7 +11,9 @@
 }
 
 body, html {
-    margin: 0;
+    margin: auto;
+    padding: auto;
+    width: 95%;
     font-family: 'Familjen Grotesk', serif;
 }
 
@@ -25,15 +27,16 @@ body, html {
         line-height: 50vw;
         position: fixed;
         top: 0;
-        width: 100%;
+        width: 99%;
         transition: 2s;
         word-break: break-all;
     }
 
 /*BODY*/
     .bodytext{
-        margin-top:700px;
+        margin-top:500px;
         font-size:var(--body-copy);
+        margin-bottom: 100px;
     }
 
 /*BOTTOM NAVIGATION*/
