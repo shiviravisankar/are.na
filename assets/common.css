@@ -1,26 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;700&display=swap');
+
 :root{
     --body-copy:17px;
     --body-copy-line-height: calc(var(--body-copy)*1.2);
 
-    --main-heading: 20vw;
+    --main-heading: 60vw;
     --main-heading-line-height: calc(var(--main-heading));
 }
 
 body {
-font-family: 'Bebas Neue', serif;
-height: 100%;
-touch-action: manipulation;
-margin: 0;
-padding: 0;
-color: black;
+    margin: auto;
+    padding: auto;
+    width: 90%;
+    font-family: 'Familjen Grotesk', serif;
+    height: 100%;
+    touch-action: manipulation;
+    color: black;
 }
 
-.zoom{  
-    height:100vh;  
-    width:100%;  
-    display:grid;  
-    place-items:center;  
-    position:fixed;  
-    top:0;  
-    left:0;
+h1{
+    display: inline-block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: var(--main-heading);
+    overflow-x: hidden;
+    line-height: 50vw;
+    word-break: break-all;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    margin-top: 30px;
 }
+
+/*BOTTOM NAVIGATION*/
+    .mobile-nav {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        position: fixed;
+        bottom: 0;
+        height: 85px;
+        display: flex;
+        justify-content: space-evenly;
+        z-index: 9999;
+        left: 0;
+        right: 0;
+        padding-top: 15px;
+    }
+
+    .bloc-icon {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        border: 1px black solid;
+    }
+
+    .bloc-icon_active{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        font-size: var(--body-copy);
+    }
+
+/*|| BOTTOM NAVIGATION FOR LARGER SCREENS */
+@media screen and (min-width: 600px) {
+    .mobile-nav {
+    display: none;
+    }
+    }
