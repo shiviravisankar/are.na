@@ -1,0 +1,26 @@
+:root{
+    --body-copy:17px;
+    --body-copy-line-height: calc(var(--body-copy)*1.2);
+
+    --main-heading: 20vw;
+    --main-heading-line-height: calc(var(--main-heading));
+}
+
+body {
+font-family: 'Bebas Neue', serif;
+height: 100%;
+touch-action: manipulation;
+margin: 0;
+padding: 0;
+color: black;
+}
+
+.zoom{  
+    height:100vh;  
+    width:100%;  
+    display:grid;  
+    place-items:center;  
+    position:fixed;  
+    top:0;  
+    left:0;
+}
