@@ -6,12 +6,17 @@
 
     --main-heading: 60vw;
     --main-heading-line-height: calc(var(--main-heading));
+
+    --grid-gap: 16px;
+    --num-cols: 1;
+	--row-height: 270px;
 }
 
 body, html {
+    box-sizing: border-box;
     margin: auto;
     padding: auto;
-    width: 95%;
+    width: 90%;
     font-family: 'Familjen Grotesk', serif;
 }
 
@@ -35,9 +40,35 @@ body, html {
     position: relative;
     margin-top:10px;
     font-size:var(--body-copy);
+    margin-bottom: 20px;
+}
+
+/*CONTENT GRID*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--grid-gap);
     margin-bottom: 100px;
 }
 
+.grid > div{
+    display: grid;
+    padding: 1em;
+    background-color: gray;
+    place-items: center;
+}
+
+.grid > div::before{
+    content: "";
+    padding-top: 100%;
+    display: block;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.grid > div > img{
+    width: 100%;
+    grid-area: 1 / 1 / 2 / 2;
+}
 /*BOTTOM NAVIGATION*/
 .mobile-nav {
     margin: 0;
