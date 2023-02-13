@@ -19,13 +19,13 @@ body, html {
 
 /*TITLE*/
     #header {
-        display: inline-block;
+        display: block;
         font-family: 'Bebas Neue', sans-serif;
         margin-top: 30px;
         color: black;
         font-size: 60vw;
         line-height: 50vw;
-        position: fixed;
+        position: sticky; 
         top: 0;
         width: 99%;
         transition: 2s;
@@ -34,9 +34,11 @@ body, html {
 
 /*BODY*/
     .bodytext{
-        margin-top:500px;
+        margin-top:10px;
         font-size:var(--body-copy);
         margin-bottom: 100px;
+        position: relative;
+        display: block;
     }
 
 /*BOTTOM NAVIGATION*/
