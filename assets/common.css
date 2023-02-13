@@ -23,11 +23,12 @@ body, html {
 /*TITLE*/
 #header {
     display: block;
-    position: sticky; 
+    position: sticky;
     font-family: 'Bebas Neue', sans-serif;
     margin-top: 30px;
     color: black;
-    font-size: 10vw;
+    font-size: 50vw;
+    line-height: 45vw;
     top: 0;
     width: 99%;
     transition: 2s;
@@ -38,9 +39,14 @@ body, html {
 .bodytext{
     display: block;
     position: relative;
-    margin-top:10px;
+    margin-top:300px;
     font-size:var(--body-copy);
+    font-weight: 100;
     margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 10px;
 }
 
 /*CONTENT GRID*/
@@ -49,6 +55,7 @@ body, html {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: var(--grid-gap);
     margin-bottom: 100px;
+    margin-top: 20px;
 }
 
 .grid > div{
