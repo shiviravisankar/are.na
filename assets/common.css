@@ -61,11 +61,11 @@ p{
 .grid > div{
     display: grid;
     padding: 1em;
-    background-color: gray;
+    /* background-color: gray; */
     place-items: center;
 }
 
-.grid > div::before{
+ /* .grid > div::before{
     content: "";
     padding-top: 100%;
     display: block;
@@ -75,7 +75,7 @@ p{
 .grid > div > img{
     width: 100%;
     grid-area: 1 / 1 / 2 / 2;
-}
+} /*
 /*BOTTOM NAVIGATION*/
 .mobile-nav {
     margin: 0;
