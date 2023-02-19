@@ -7,7 +7,6 @@
     --main-heading: 25vw;
     --main-heading-line-height: calc(var(--main-heading));
 
-    --grid-gap: 1em;
 	--row-height: 270px;
 }
 
@@ -42,21 +41,16 @@ p{
 	flex-direction: row;
 	justify-content: space-around;
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 /*CONTENT*/
 .image-block{
 	display: grid;
     grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
-    gap: var(--grid-gap);
+    gap: 1em;
+	margin-bottom: 30px;
 	justify-content: center;
-}
-
-.image-block > div{
-    display: grid;
-    padding: 1em;
-    /* background-color: gray; */
-    place-items: center;
 }
 
 
