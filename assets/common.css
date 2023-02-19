@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Familjen+Grotesk:wght@400;700&display=swap');
+
+:root{
+    --body-copy:17px;
+    --body-copy-line-height: calc(var(--body-copy)*1.2);
+
+    --main-heading: 25vw;
+    --main-heading-line-height: calc(var(--main-heading));
+
+    --grid-gap: 1em;
+	--row-height: 270px;
+}
+
+body, html {
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+    width: 93%;
+    font-family: 'Familjen Grotesk', serif;
+}
+/*HEADING*/
+.channel-title{
+	font-family: 'Bebas Neue', serif;
+	font-size: 30vw;
+	line-height: 15vw;
+	margin-top: 50px;
+}
+
+.sub-title{
+	font-family: 'Bebas Neue', serif;
+	font-size: 30vw;
+}
+
+p{
+	margin-bottom: 10px;
+}
+
+
+/*MEDIA FILTER*/
+.media{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+/*CONTENT*/
+.image-block{
+	display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+    gap: var(--grid-gap);
+	justify-content: center;
+}
+
+.image-block > div{
+    display: grid;
+    padding: 1em;
+    /* background-color: gray; */
+    place-items: center;
+}
+
+
+/*BOTTOM NAVIGATION*/
+.mobile-nav {
+    margin: 0;
+    padding: 0;
+	display: flex;
+	position: fixed;
+    background-color: white;
+    bottom: 0;
+	height: 85px;
+    justify-content: space-evenly;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+}
+
+.bloc-icon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px black solid;
+}
+
+.bloc-icon_active{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: var(--body-copy);
+}

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="assets/reset.css" rel="stylesheet">
         <link href="assets/common.css" rel="stylesheet">
+        <script defer src="assets/arena.js"></script>
 
         <!-- ICONS FOR MEDIA -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -16,20 +17,56 @@
 <body>
 
     <section>
-        <!-- Replace this URL with your channel to connect the API! -->
         <a href="https://www.are.na/azra-adenwala/embrace-suz2ndd1ldg" id="channel-url">
             <h1 class="channel-title"></h1>
         </a>
         <h2 class="sub-title">Fear</h2>
-        <div class="channel-description"></div> <!-- Description of channel -->
-        <div class="channel-owner channel-collaborator"></div> <!-- Owner and collaborators. -->
+        <div class="channel-description"></div>
+        <div class="channel-owner channel-collaborator"></div>
     </section>
 
+    <!-- FILTER BY MEDIA -->
     <div class="media">
         <div class="create"><i class="material-icons">draw</i></div>
         <div class="watch"><i class="material-icons">videocam</i></div>
         <div class="listen"><i class="material-icons">music_note</i></div>
         <div class="read"><i class="material-icons">library_books</i></div>
     </div>
+
+     <!-- CONTENT -->
+     <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
+    </ul>
+
+    <!-- Images. -->
+        <template id="image-block">
+            <li>
+                <figure class="image-block">
+
+                    <picture>
+                        <source class="image-thumb">
+                        <source class="image-square">
+                        <source class="image-display">
+                        <img class="image">
+                    </picture>
+                    <a class="link">
+                        <p class="link-title"></p>
+                    </a>
+                    <figcaption class="description"></figcaption>
+                    <p class="time-updated"></p>
+                </figure>
+            </li>
+        </template>
+
+    <!-- BOTTOM NAVIGATION FOR MOBILE -->
+    <nav class="mobile-nav">
+        <a class="bloc-icon_active">F
+        </a>
+        <a class="bloc-icon">U
+        </a>
+        <a class="bloc-icon">C
+        </a>
+        <a class="bloc-icon">K
+        </a>
+    </nav>
 </body>
 </html>
