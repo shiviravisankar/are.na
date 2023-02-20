@@ -29,24 +29,36 @@
     <div class="media">
         <input type="radio" name="check" class="tabs_radio" id="tab1" checked>
         <label for="tab1" class="filter"><i class="material-icons">apps</i></label>
+        <div class="selected">
+            <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks"></ul>
+        </div>
 
         <input type="radio" name="check" class="tabs_radio" id="tab2">
         <label for="tab2" class="filter"><i class="material-icons">draw</i></label>
+        <div class="selected">
+            <ul class="image-blocks"></ul>
+        </div>
 
         <input type="radio" name="check" class="tabs_radio" id="tab3">
         <label for="tab3" class="filter"><i class="material-icons">videocam</i></label>
+        <div class="selected">
+            <ul class="video-embed-blocks video-file-blocks"></ul>
+        </div>
 
         <input type="radio" name="check" class="tabs_radio" id="tab4">
         <label for="tab4" class="filter"><i class="material-icons">music_note</i></label>
+        <div class="selected">
+            <ul class="audio-embed-blocks audio-file-blocks"></ul>
+        </div>
 
         <input type="radio" name="check" class="tabs_radio" id="tab5">
         <label for="tab5" class="filter"><i class="material-icons">library_books</i></label>
+        <div class="selected">
+            <ul class="embed-blocks link-blocks pdf-blocks text-blocks"></ul>
+        </div>
     </div>
 
 <!-- CONTENT -->
-     <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
-    </ul>
-
     <!-- Images. -->
     <div class="content">  
         <template id="image-block">
@@ -111,7 +123,6 @@
 		<template id="audio-embed-block">
 			<li>
 				<figure class="audio-embed"> <!-- You can use the container classes to style a whole type. -->
-					<h3 class="title"></h3> <!-- Block title inserts here. -->
 					<picture>
 						<source class="image-square">
                         <a class="link"><img class="image"></a>
