@@ -36,15 +36,40 @@ p{
 /*MEDIA FILTER*/
 .media{
 	display: flex;
+    flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
     position: sticky;
     top: 0;
     background-color: white;
+    color: gray;
     padding-top: 20px;
     padding-bottom: 20px;
 	margin-top: 50px;
 	margin-bottom: 30px;
+}
+
+.tabs_radio {
+    display: none;
+}
+
+.tabs_radio:checked + .filter {
+    color: black;
+    border: 2px solid black;
+}
+
+.filter {
+    cursor: pointer;
+}
+
+.selected{
+    order: 1;
+    width: 100%;
+    display: none;
+}
+
+.tabs_radio:checked + .filter + .selected {
+    display: initial;
 }
 
 
