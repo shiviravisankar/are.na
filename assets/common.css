@@ -38,23 +38,34 @@ p{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 /*CONTENT*/
+
+.content{
+    margin-bottom: 130px;
+}
     .image-block {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 1em;
     }
 
       img {
         display: block;
         width: 100%;
-        padding: 20px;
+        padding: 10px;
         object-fit: cover;
         aspect-ratio: 1 / 1 ;
         border: 0.5px solid black;
+        margin-top: 30px;
       }
 
 
