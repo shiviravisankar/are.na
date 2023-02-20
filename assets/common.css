@@ -47,6 +47,7 @@ p{
 	margin-bottom: 30px;
 }
 
+
 /*CONTENT*/
 
 .content{
@@ -77,12 +78,12 @@ p{
 	position: fixed;
     background-color: white;
     bottom: 0;
-	height: 85px;
+	height: 120px;
     justify-content: space-evenly;
     z-index: 9999;
     left: 0;
     right: 0;
-    padding-top: 18px;
+    padding-top: 30px;
 }
 
 .bloc-icon {
