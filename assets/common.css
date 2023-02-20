@@ -6,15 +6,13 @@
 
     --main-heading: 25vw;
     --main-heading-line-height: calc(var(--main-heading));
-
-	--row-height: 270px;
 }
 
-body, html {
+body {
     box-sizing: border-box;
     margin: auto;
     padding: auto;
-    width: 93%;
+    width: 80%;
     font-family: 'Familjen Grotesk', serif;
 }
 /*HEADING*/
@@ -48,15 +46,14 @@ p{
     .image-block {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-gap: 1em;
     }
 
       img {
         width: 100%;
-        height: 100%;
+        padding: 20px;
         object-fit: contain;
         grid-area: 1 / 1 / 2 / 2;
-        border: 2px solid black;
+        border: 0.5px solid black;
       }
 
 
