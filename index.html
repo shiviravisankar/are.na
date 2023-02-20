@@ -33,7 +33,7 @@
         <div class="read"><i class="material-icons">library_books</i></div>
     </div>
 
-     <!-- CONTENT -->
+<!-- CONTENT -->
      <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
     </ul>
 
@@ -50,6 +50,66 @@
                 </li>
         </template>
     </div>
+
+    <!-- Articles / PDF's -->
+		<template id="pdf-block">
+			<li>
+				<figure class="pdf-block">
+					<picture>
+						<source class="image-square">
+						<img class="image">
+					</picture>
+				</figure>
+			</li>
+		</template>
+
+    <!-- Text. -->
+    <template id="text-block">
+        <li>
+            <figure class="text-block">
+                <h3 class="title"></h3>
+                <div class="content"></div>
+            </figure>
+        </li>
+    </template>
+
+<!-- YouTube, Vimeo, etc. -->
+    <template id="video-embed-block">
+        <li>
+            <figure class="video-embed-block">
+                <picture>
+                    <source class="image-square">
+
+                    <img class="image">
+                </picture>
+            </figure>
+        </li>
+    </template>
+
+<!-- Links (saved sites). -->
+    <template id="link-block">
+        <li>
+            <figure class="link-block">
+                <picture>
+                    <source class="image-square">
+                    <img class="image">
+                </picture>
+            </figure>
+        </li>
+    </template>
+
+<!-- Spotify, Soundcloud, etc. -->
+		<template id="audio-embed-block">
+			<li>
+				<figure class="audio-embed"> <!-- You can use the container classes to style a whole type. -->
+					<h3 class="title"></h3> <!-- Block title inserts here. -->
+					<picture>
+						<source class="image-square">
+						<img class="image"> <!-- Largest image/cover source inserts here. -->
+					</picture>
+				</figure>
+			</li>
+		</template>
 
     <!-- BOTTOM NAVIGATION FOR MOBILE -->
     <nav class="mobile-nav">
