@@ -136,3 +136,8 @@ p{
     font-weight: bold;
     font-size: var(--body-copy);
 }
+
+@media screen and (max-width: 500px ) {
+
+    
+}
