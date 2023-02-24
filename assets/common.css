@@ -43,10 +43,6 @@ p{
     top: 0;
     background-color: white;
     color: gray;
-    padding-top: 20px;
-    padding-bottom: 20px;
-	margin-top: 50px;
-	margin-bottom: 30px;
 }
 
 .tabs_radio {
@@ -76,7 +72,7 @@ p{
 /*CONTENT*/
 
 .content{
-    margin-bottom: 130px;
+    margin-bottom: 150px;
 }
     ul {
         --columns: 1;
@@ -136,7 +132,8 @@ p{
     font-size: var(--body-copy);
 }
 
-@media screen and (max-width: 500px ) {
-
-    
+@media screen and (min-width: 500px ) {
+    ul{
+        --columns: 3;
+    }
 }
