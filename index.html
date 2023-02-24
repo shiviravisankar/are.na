@@ -67,13 +67,12 @@
                 <li>
                     <figure class="image-block">
                         <picture>
-                            <source class="image-display">
-                            <a class="link"><img class="image"></a>
+                        <source class="image-display">
+                        <img class="image">
                         </picture>
                     </figure>
                 </li>
         </template>
-    </div>
 
     <!-- Articles / PDF's -->
 		<template id="pdf-block">
@@ -109,6 +108,19 @@
         </li>
     </template>
 
+<!-- Uploaded video files. -->
+    <template id="video-file-block">
+        <li>
+            <figure class="video-file-block">
+                <picture>
+                    <source class="image-display">
+                    <a class="link"><img class="image"></a>
+                </picture>
+                <video class="video" controls></video>
+            </figure>
+        </li>
+    </template>
+
 <!-- Links (saved sites). -->
     <template id="link-block">
         <li>
@@ -132,6 +144,20 @@
 				</figure>
 			</li>
 		</template>
+
+<!-- Uploaded audio files. -->
+        <template id="audio-file-block">
+            <li>
+                <figure class="audio-file-block">
+                    <picture>
+                        <source class="image-display">
+                        <a class="link"><img class="image"></a>
+                    </picture>
+                    <audio class="audio" controls></audio>
+                </figure>
+            </li>
+        </template>
+    </div>
 
     <!-- BOTTOM NAVIGATION FOR MOBILE -->
     <nav class="mobile-nav">
