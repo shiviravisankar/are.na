@@ -40,8 +40,10 @@ p{
     flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: 0;
+    color: rgb(145, 145, 145);
     background-color: white;
     margin-top: 20px;
     padding-top: 20px;
