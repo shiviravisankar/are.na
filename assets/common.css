@@ -50,10 +50,17 @@ p{
 
 
 /*CONTENT*/
+    .contentbox{
+        margin-top: 30px;
+        margin-bottom: 150px;
+    }
+
     ul {
         --columns: 1;
+        --grid-gap: 1.5em;
         display: grid;
         grid-template-columns: repeat(var(--columns),1fr);
+        gap: var(--grid-gap);
         justify-content: center;
         align-items: center;
     }
@@ -64,13 +71,14 @@ p{
         padding: 10px;
         object-fit: cover;
         aspect-ratio: 1 / 1;
-        border: 0.5px solid black;
-        margin-top: 30px;
+        border: 0.25px solid gray;
       }
 
 @media screen and (min-width: 500px ) {
     ul{
         --columns: 3;
         align-items: start;
+        gap: calc(var(--grid-gap)*2.5);
     }
+
 }
