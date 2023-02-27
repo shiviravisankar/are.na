@@ -30,50 +30,53 @@
     <!-- FILTER BY MEDIA -->
     <div class="media">
         <a href="index.html"><i class="material-icons">apps</i></a>
-        <a href="watch.html"><i class="material-icons">videocam</i></a>
+        <a href="watch.html"><i class="material-icons"><span style="color: black; font-size: xx-large;">videocam</span></i></a>
         <a href="create.html"><i class="material-icons">draw</i></a>
         <a href="listen.html"><i class="material-icons">music_note</i></a>
-        <a href="read.html"><i class="material-icons"><span style="color: black; font-size: xx-large;">library_books</span></i></a>
+        <a href="read.html"><i class="material-icons">library_books</span></i></a>
     </div>
 
     <!-- CONTENT -->
     <div class="contentbox">
-    <ul class="embed-blocks link-blocks pdf-blocks">
-    </ul>
+        <ul class="video-embed-blocks video-file-blocks">
+        </ul>
 
-    <!-- Articles / PDF's -->
-		<template id="pdf-block">
-			<li>
-				<figure class="pdf-block">
-					<picture>
-						<source class="image-display">
-						<a class="link"><img class="image"></a>
-					</picture>
-				</figure>
-			</li>
-		</template>
+    <!-- YouTube, Vimeo, etc. -->
+        <template id="video-embed-block">
+            <li>
+                <figure class="video-embed-block">
+                    <picture>
+                        <source class="image-display">
 
-<!-- Links (saved sites). -->
-    <template id="link-block">
-        <li>
-            <figure class="link-block">
-                <picture>
-                    <source class="image-display">
-                    <a class="link"><img class="image"></a>
-                </picture>
-            </figure>
-        </li>
-    </template>
+                        <a class="link"><img class="image"></a>
+                    </picture>
+                </figure>
+            </li>
+        </template>
+
+    <!-- Uploaded video files. -->
+        <template id="video-file-block">
+            <li>
+                <figure class="video-file-block">
+                    <picture>
+                        <source class="image-display">
+                        <a class="link"><img class="image"></a>
+                    </picture>
+                    <video class="video" controls></video>
+                </figure>
+            </li>
+        </template>
+    </div>
 
         <!-- BOTTOM NAVIGATION FOR MOBILE -->
         <nav class="mobile-nav">
-            <a href="../index.html" class="bloc-icon_active">F
+            <a class="bloc-icon_active">F
             </a>
-            <a href="../uncertainty/uncertainty.html" class="bloc-icon">U
+            <a class="bloc-icon">U
             </a>
-            <a href="../change/change.html" class="bloc-icon">C
+            <a class="bloc-icon">C
             </a>
-            <a href="../kindness/kindness.html" class="bloc-icon">K
+            <a class="bloc-icon">K
             </a>
         </nav>
 </body>

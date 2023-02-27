@@ -31,49 +31,38 @@
     <div class="media">
         <a href="index.html"><i class="material-icons">apps</i></a>
         <a href="watch.html"><i class="material-icons">videocam</i></a>
-        <a href="create.html"><i class="material-icons">draw</i></a>
+        <a href="create.html"><i class="material-icons"><span style="color: black; font-size: xx-large;">draw</span></i></a>
         <a href="listen.html"><i class="material-icons">music_note</i></a>
-        <a href="read.html"><i class="material-icons"><span style="color: black; font-size: xx-large;">library_books</span></i></a>
+        <a href="read.html"><i class="material-icons">library_books</i></a>
     </div>
 
     <!-- CONTENT -->
     <div class="contentbox">
-    <ul class="embed-blocks link-blocks pdf-blocks">
+    <ul class="image-blocks embed-blocks">
     </ul>
 
-    <!-- Articles / PDF's -->
-		<template id="pdf-block">
-			<li>
-				<figure class="pdf-block">
-					<picture>
-						<source class="image-display">
-						<a class="link"><img class="image"></a>
-					</picture>
-				</figure>
-			</li>
-		</template>
-
-<!-- Links (saved sites). -->
-    <template id="link-block">
-        <li>
-            <figure class="link-block">
-                <picture>
-                    <source class="image-display">
-                    <a class="link"><img class="image"></a>
-                </picture>
-            </figure>
-        </li>
-    </template>
+    <!-- Images. --> 
+        <template id="image-block">
+                <li>
+                    <figure class="image-block">
+                        <picture>
+                        <source class="image-display">
+                        <img class="image">
+                        </picture>
+                    </figure>
+                </li>
+        </template>
+    </div>
 
         <!-- BOTTOM NAVIGATION FOR MOBILE -->
         <nav class="mobile-nav">
-            <a href="../index.html" class="bloc-icon_active">F
+            <a class="bloc-icon_active">F
             </a>
-            <a href="../uncertainty/uncertainty.html" class="bloc-icon">U
+            <a class="bloc-icon">U
             </a>
-            <a href="../change/change.html" class="bloc-icon">C
+            <a class="bloc-icon">C
             </a>
-            <a href="../kindness/kindness.html" class="bloc-icon">K
+            <a class="bloc-icon">K
             </a>
         </nav>
 </body>
