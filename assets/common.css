@@ -18,15 +18,17 @@ body {
 /*HEADING*/
 #header{
     display: block;
-	font-family: 'Bebas Neue', serif;
+    background-color: white;
+    font-family: 'Bebas Neue', serif;
     position: sticky;
-    top: 0.3em;
-	font-size: 50vw;
+    top: 0em;
+    font-size: 47vw;
     line-height: 40vw;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
     transition: 2s;
     word-break: break-all;
+    z-index: 99;
 }
 
 .channel-description{
