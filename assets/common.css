@@ -16,20 +16,24 @@ body {
     font-family: 'Familjen Grotesk', serif;
 }
 /*HEADING*/
-.channel-title{
+#header{
+    display: block;
 	font-family: 'Bebas Neue', serif;
-	font-size: 30vw;
-	line-height: 15vw;
-	margin-top: 50px;
+    position: sticky;
+    top: 0.3em;
+	font-size: 50vw;
+    line-height: 40vw;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    transition: 2s;
+    word-break: break-all;
 }
 
-.sub-title{
-	font-family: 'Bebas Neue', serif;
-	font-size: 30vw;
-}
-
-p{
-	margin-bottom: 10px;
+.channel-description{
+    position: relative;
+    display: block;
+    font-size:var(--body-copy);
+    margin-top: 400px;
 }
 
 
@@ -42,7 +46,7 @@ p{
 	justify-content: space-between;
     align-items: center;
     position: sticky;
-    top: 0;
+    top: 0em;
     color: rgb(145, 145, 145);
     background-color: white;
     margin-top: 20px;

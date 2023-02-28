@@ -19,10 +19,10 @@
 <body>
 
     <section>
-        <a href="https://www.are.na/azra-adenwala/embrace-suz2ndd1ldg" id="channel-url">
-            <h1 class="channel-title"></h1>
-        </a>
-        <h2 class="sub-title">Fear</h2>
+            <a href="https://www.are.na/azra-adenwala/embrace-suz2ndd1ldg" id="channel-url">
+                <h1 class="title" id="header">Embrace Fear</h1>
+            </a>
+
         <div class="channel-description"></div>
         <div class="channel-owner channel-collaborator"></div>
     </section>
@@ -140,6 +140,23 @@
         <a href="kindness/kindness.html" class="bloc-icon">K
         </a>
     </nav>
+
+<!-- JavaScript for text effect. -->    
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) 
+            {
+                document.getElementById("header").style.fontSize = "24vw";
+                document.getElementById("header").style.lineHeight = "22vw";
+            } 
+            else {
+                document.getElementById("header").style.fontSize = "50vw";
+                document.getElementById("header").style.lineHeight = "40vw";
+            }
+            }    
+    </script>
 
 </body>
 </html>
