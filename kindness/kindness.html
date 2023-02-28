@@ -13,6 +13,22 @@
 
         <!-- ICONS FOR MEDIA -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <!-- Specific to this title -->
+        <style>
+            #headertwo{
+                display: block;
+                font-family: 'Bebas Neue', serif;
+                position: sticky;
+                top: 0.3em;
+                font-size: 47vw;
+                line-height: 40vw;
+                margin-top: 50px;
+                margin-bottom: 10px;
+                transition: 2s;
+                word-break: break-all;
+            }
+        </style>
     </head>
 
 <!-- TITLE -->
@@ -20,9 +36,8 @@
 
     <section>
         <a href="https://www.are.na/azra-adenwala/embrace-suz2ndd1ldg" id="channel-url">
-            <h1 class="channel-title"></h1>
+            <h1 class="title" id="headertwo">Embrace<br>Kindness</h1>
         </a>
-        <h2 class="sub-title">Kindness</h2>
         <div class="channel-description"></div>
         <div class="channel-owner channel-collaborator"></div>
     </section>
@@ -140,6 +155,23 @@
         <a href="../kindness/kindness.html" class="bloc-icon_active">K
         </a>
     </nav>
+
+        <!-- JavaScript for text effect. -->    
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) 
+            {
+                document.getElementById("headertwo").style.fontSize = "19vw";
+                document.getElementById("headertwo").style.lineHeight = "18vw";
+            } 
+            else {
+                document.getElementById("headertwo").style.fontSize = "47vw";
+                document.getElementById("headertwo").style.lineHeight = "40vw";
+            }
+            }    
+    </script>
 
 </body>
 </html>
