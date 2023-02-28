@@ -31,11 +31,30 @@ body {
     z-index: 99;
 }
 
+#headertwo{
+    display: block;
+    background-color: white;
+    font-family: 'Bebas Neue', serif;
+    position: sticky;
+    top: 0em;
+    font-size: 47vw;
+    line-height: 40vw;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    transition: 2s;
+    word-break: break-all;
+    z-index: 99;
+}
+
 .channel-description{
     position: relative;
     display: block;
     font-size:var(--body-copy);
     margin-top: 400px;
+}
+
+.channel-title{
+    display: none;
 }
 
 
@@ -127,6 +146,18 @@ body {
         --columns: 3;
         align-items: start;
         gap: calc(var(--grid-gap)*2.5);
+    }
+
+    #header{
+        display: none;
+    }
+
+    #headertwo{
+        display: none;
+    }
+
+    .mobile-nav{
+        display: none;
     }
 
 }
