@@ -31,11 +31,6 @@ body {
     z-index: 99;
 }
 
-.otherheader{
-    font-size: 10vw;
-    line-height: 8vw;
-}
-
 #headertwo{
     display: block;
     background-color: white;
@@ -56,6 +51,7 @@ body {
     display: block;
     font-size:var(--body-copy);
     margin-top: 400px;
+    margin-bottom: 20px;
 }
 
 .channel-title{
@@ -83,7 +79,7 @@ body {
     top: 0em;
     color: rgb(145, 145, 145);
     background-color: white;
-    margin-top: 20px;
+    margin-top: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
