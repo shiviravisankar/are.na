@@ -148,6 +148,44 @@ body {
         font-size: var(--body-copy);
     }
 
+/*TEXT ANIMATION*/
+    .fear:hover{
+        animation: tilt-n-move-shaking 0.25s infinite;
+    }
+
+    @keyframes tilt-n-move-shaking {
+        0% { transform: translate(0, 0) rotate(0deg); }
+        25% { transform: translate(1px, 1px) rotate(1deg); }
+        50% { transform: translate(0, 0) rotate(0eg); }
+        75% { transform: translate(-1px, 1px) rotate(-1deg); }
+        100% { transform: translate(0, 0) rotate(0deg); }
+      }
+
+    .uncertainty:hover{
+        filter: blur(1.5px);
+    }
+
+    .change:hover {
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .kindness:hover{
+        background-image: linear-gradient(
+            -225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%
+            );
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+    }
+
 /*MEDIA QUERY FOR DESKTOP*/
 @media screen and (min-width: 500px ) {
 
@@ -180,7 +218,7 @@ body {
         line-height: 10vw;
         font-family: 'Bebas Neue', serif;
         margin-bottom: 50px;
-        margin-top: -40px;
+        margin-top: -50px;
     }
 
     .media{
@@ -195,6 +233,7 @@ body {
         position: sticky;
         top: 0px;
         background-color: white;
+        align-items: center;
     }
 
     .page{
@@ -230,6 +269,10 @@ body {
         color: rgb(185, 185, 185);
     }
 
+    .all:hover, .photo:hover, .video:hover, .audio:hover, .read:hover{
+        color: black;
+    }
+
     .mediadesktop{
         display: flex;
         flex-direction: column;
@@ -237,6 +280,7 @@ body {
         margin-left: 3%;
         margin-right: 7%;
         margin-top: 5%;
+        align-items: center;
     }
 
     .allcontent{
@@ -246,7 +290,17 @@ body {
     }
 
     .material-icons.md-48 { 
-        font-size: 32px; 
+        font-size: 28px; 
     }
 
+    .material-icons.md-36 { 
+        font-size: 48px; 
+        color: black;
+    }
+
+    .active{
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+    }
 }
