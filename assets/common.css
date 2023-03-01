@@ -31,6 +31,11 @@ body {
     z-index: 99;
 }
 
+.otherheader{
+    font-size: 10vw;
+    line-height: 8vw;
+}
+
 #headertwo{
     display: block;
     background-color: white;
