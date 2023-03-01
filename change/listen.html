@@ -13,6 +13,13 @@
 
         <!-- ICONS FOR MEDIA -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style>
+            @media screen and (max-width: 500px ) {
+             .channel-description{
+                 display: none;
+             }
+            } 
+         </style>
     </head>
 
 <!-- TITLE -->
@@ -43,7 +50,6 @@
             </div>
             <section>
                     <a href="https://www.are.na/azra-adenwala/embrace-suz2ndd1ldg" id="channel-url">
-                        <h1 id="header">Embrace Change</h1>
                         <h2 class="channel-title"></h2>
                     </a>
 
@@ -53,10 +59,10 @@
 
             <!-- FILTER BY MEDIA -->
             <div class="media">
-                <a href="index.html"><i class="material-icons"><span style="color: black; font-size: xx-large;">apps</span></i></a>
+                <a href="change.html"><i class="material-icons">apps</i></a>
                 <a href="watch.html"><i class="material-icons">videocam</i></a>
                 <a href="create.html"><i class="material-icons">draw</i></a>
-                <a href="listen.html"><i class="material-icons">music_note</i></a>
+                <a href="listen.html"><i class="material-icons"><span style="color: black; font-size: xx-large;">music_note</span></i></a>
                 <a href="read.html"><i class="material-icons">library_books</i></a>
             </div>
 
@@ -102,23 +108,6 @@
                 <a href="../kindness/kindness.html" class="bloc-icon">K
                 </a>
             </nav>
-
-        <!-- JavaScript for text effect. -->    
-            <script>
-                window.onscroll = function() {scrollFunction()};
-
-                    function scrollFunction() {
-                    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) 
-                    {
-                        document.getElementById("header").style.fontSize = "24vw";
-                        document.getElementById("header").style.lineHeight = "22vw";
-                    } 
-                    else {
-                        document.getElementById("header").style.fontSize = "50vw";
-                        document.getElementById("header").style.lineHeight = "40vw";
-                    }
-                    }    
-            </script>
         </div>
     </div>
 </body>
