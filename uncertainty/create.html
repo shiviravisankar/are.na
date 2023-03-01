@@ -18,52 +18,95 @@
 <!-- TITLE -->
 <body>
 
-    <section>
-        <a href="https://www.are.na/azra-adenwala/embrace-suz2ndd1ldg" id="channel-url">
-            <h1 class="channel-title"></h1>
-        </a>
-        <h2 class="sub-title">Uncert</h2>
-        <div class="channel-description"></div>
-        <div class="channel-owner channel-collaborator"></div>
-    </section>
+    <div class="deskflex">
+        <!-- FILTER BY MEDIA - DESKTOP -->
+        <div class="mediadesktop">
+            <a href="uncertainty.html"><div class="all"><i class="material-icons md-48">apps</i></div></a>
+            <a href="watch.html"><div class="video"><i class="material-icons md-48">videocam</i></div></a>
+            <a href="create.html"><div class="photo"><i class="material-icons md-36">draw</i></div></a>
+            <a href="listen.html"><div class="audio"><i class="material-icons md-48">music_note</i></div></a>
+            <a href="read.html"><div class="read"><i class="material-icons md-48">library_books</i></div></a>
+        </div>
 
-    <!-- FILTER BY MEDIA -->
-    <div class="media">
-        <a href="uncertainty.html"><i class="material-icons">apps</i></a>
-        <a href="watch.html"><i class="material-icons">videocam</i></a>
-        <a href="create.html"><i class="material-icons"><span style="color: black; font-size: xx-large;">draw</span></i></a>
-        <a href="listen.html"><i class="material-icons">music_note</i></a>
-        <a href="read.html"><i class="material-icons">library_books</i></a>
+        <div class="allcontent">
+
+            <!-- NAV FOR DESKTOP -->
+            <div class="desktop-nav">
+                <a href="/create.html" class="page fear"><div class="fear">Fear</div>
+                </a>
+                <a href="uncertainty/uncertainty.html" class="page uncertainty active">Uncertainty
+                </a>
+                <a href="change/change.html" class="page change">Change
+                </a>
+                <a href="kindness/kindness.html" class="page kindness">Kindness
+                </a>
+            </div>
+            <section>
+                    <a href="https://www.are.na/azra-adenwala/embrace-suz2ndd1ldg" id="channel-url">
+                        <h1 id="headertwo">Embrace Uncertainty</h1>
+                        <h2 class="channel-title"></h2>
+                    </a>
+
+                <div class="channel-description"></div>
+                <div class="channel-owner channel-collaborator"></div>
+            </section>
+
+            <!-- FILTER BY MEDIA -->
+            <div class="media">
+                <a href="index.html"><i class="material-icons"><span style="color: black; font-size: xx-large;">apps</span></i></a>
+                <a href="watch.html"><i class="material-icons">videocam</i></a>
+                <a href="create.html"><i class="material-icons">draw</i></a>
+                <a href="listen.html"><i class="material-icons">music_note</i></a>
+                <a href="read.html"><i class="material-icons">library_books</i></a>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="contentbox" id="contentboxfear">
+            <ul class="image-blocks embed-blocks">
+            </ul>
+
+            <!-- Images. --> 
+                <template id="image-block">
+                        <li>
+                            <figure class="image-block">
+                                <picture>
+                                <source class="image-display">
+                                <img class="image">
+                                </picture>
+                            </figure>
+                        </li>
+                </template>
+            </div>
+
+            <!-- BOTTOM NAVIGATION FOR MOBILE -->
+            <nav class="mobile-nav">
+                <a href="/index.html" class="bloc-icon_active">F
+                </a>
+                <a href="uncertainty/uncertainty.html" class="bloc-icon">U
+                </a>
+                <a href="change/change.html" class="bloc-icon">C
+                </a>
+                <a href="kindness/kindness.html" class="bloc-icon">K
+                </a>
+            </nav>
+
+        <!-- JavaScript for text effect. -->    
+            <script>
+                window.onscroll = function() {scrollFunction()};
+
+                    function scrollFunction() {
+                    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) 
+                    {
+                        document.getElementById("headertwo").style.fontSize = "19vw";
+                        document.getElementById("headertwo").style.lineHeight = "18vw";
+                    } 
+                    else {
+                        document.getElementById("headertwo").style.fontSize = "47vw";
+                        document.getElementById("headertwo").style.lineHeight = "40vw";
+                    }
+                    }    
+            </script>
+        </div>
     </div>
-
-    <!-- CONTENT -->
-    <div class="contentbox">
-    <ul class="image-blocks embed-blocks">
-    </ul>
-
-    <!-- Images. --> 
-        <template id="image-block">
-                <li>
-                    <figure class="image-block">
-                        <picture>
-                        <source class="image-display">
-                        <img class="image">
-                        </picture>
-                    </figure>
-                </li>
-        </template>
-    </div>
-
-        <!-- BOTTOM NAVIGATION FOR MOBILE -->
-        <nav class="mobile-nav">
-            <a href="../index.html" class="bloc-icon">F
-            </a>
-            <a href="../uncertainty/uncertainty.html" class="bloc-icon_active">U
-            </a>
-            <a href="../change/change.html" class="bloc-icon">C
-            </a>
-            <a href="../kindness/kindness.html" class="bloc-icon">K
-            </a>
-        </nav>
 </body>
 </html>
