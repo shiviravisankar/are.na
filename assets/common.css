@@ -16,10 +16,6 @@ body {
     font-family: 'Familjen Grotesk', serif;
 }
 /*HEADING*/
-.desktop-nav{
-    display: none;
-}
-
 #header{
     display: block;
     background-color: white;
@@ -61,6 +57,15 @@ body {
     display: none;
 }
 
+/*ALL DISPLAY NONE'S FOR MOBILE*/
+.desktop-nav{
+    display: none;
+}
+
+.mediadesktop{
+    display: none;
+}
+
 /*MEDIA FILTER*/
 
 .media{
@@ -76,10 +81,6 @@ body {
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.mediadesktop{
-    display: none;
 }
 
 /*CONTENT*/
@@ -149,6 +150,7 @@ body {
 
 /*MEDIA QUERY FOR DESKTOP*/
 @media screen and (min-width: 500px ) {
+
     body{
         width: 100%;
     }
@@ -181,6 +183,10 @@ body {
         margin-top: -40px;
     }
 
+    .media{
+        display: none;
+    }
+
     /*DESKTOP NAVIGATION*/
     .desktop-nav{
         display: flex;
@@ -193,7 +199,7 @@ body {
 
     .page{
         font-size: 24px;
-        margin-right: 30px;
+        margin-left: 30px;
         padding-top: 70px;
         padding-bottom: 30px;
         text-transform: uppercase;
@@ -205,11 +211,41 @@ body {
         line-height: 30px;
         margin-top: 0px;
         margin-left: 10px;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 
     .channel-description p{
         margin-bottom: 30px;
+    }
+
+    .deskflex{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .all, .photo, .video, .audio, .read{
+        margin-bottom: 50px;
+        border-radius: 100%;
+        align-items: center;
+    }
+
+    .mediadesktop{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        margin-left: 3%;
+        margin-right: 7%;
+        margin-top: 5%;
+    }
+
+    .allcontent{
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .material-icons.md-48 { 
+        font-size: 32px; 
     }
 
 }
