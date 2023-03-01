@@ -187,6 +187,23 @@ body {
             color: transparent;
     }
 
+/*BLOCK ANIMATION*/
+    .image-block:hover{
+        animation: tilt-n-move-shaking 0.25s infinite;
+    }
+
+    @keyframes tilt-n-move-shaking {
+        0% { transform: translate(0, 0) rotate(0deg); }
+        25% { transform: translate(1px, 1px) rotate(1deg); }
+        50% { transform: translate(0, 0) rotate(0eg); }
+        75% { transform: translate(-1px, 1px) rotate(-1deg); }
+        100% { transform: translate(0, 0) rotate(0deg); }
+      } 
+
+    .video-embed-block:hover{
+        filter: blur(2px);
+    }
+
 /*MEDIA QUERY FOR DESKTOP*/
 @media screen and (min-width: 500px ) {
 
