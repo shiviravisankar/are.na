@@ -21,8 +21,8 @@
     <div class="deskflex">
         <!-- FILTER BY MEDIA - DESKTOP -->
         <div class="mediadesktop">
-            <a href="kindness.html"><div class="all"><i class="material-icons md-36">apps</i></div></a>
-            <a href="watch.html"><div class="video"><i class="material-icons md-48">videocam</i></div></a>
+            <a href="kindness.html"><div class="all"><i class="material-icons md-48">apps</i></div></a>
+            <a href="watch.html"><div class="video"><i class="material-icons md-36">videocam</i></div></a>
             <a href="create.html"><div class="photo"><i class="material-icons md-48">draw</i></div></a>
             <a href="listen.html"><div class="audio"><i class="material-icons md-48">music_note</i></div></a>
             <a href="read.html"><div class="read"><i class="material-icons md-48">library_books</i></div></a>
@@ -32,7 +32,7 @@
 
             <!-- NAV FOR DESKTOP -->
             <div class="desktop-nav">
-                <a href="/index.html" class="page fear"><div class="fear">Fear</div>
+                <a href="/watch.html" class="page fear"><div class="fear">Fear</div>
                 </a>
                 <a href="uncertainty/uncertainty.html" class="page uncertainty">Uncertainty
                 </a>
@@ -62,32 +62,8 @@
 
             <!-- CONTENT -->
             <div class="contentbox" id="contentboxfear">
-            <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
+            <ul class="video-embed-blocks video-file-blocks">
             </ul>
-
-            <!-- Images. --> 
-                <template id="image-block">
-                        <li>
-                            <figure class="image-block">
-                                <picture>
-                                <source class="image-display">
-                                <img class="image">
-                                </picture>
-                            </figure>
-                        </li>
-                </template>
-
-            <!-- Articles / PDF's -->
-                <template id="pdf-block">
-                    <li>
-                        <figure class="pdf-block">
-                            <picture>
-                                <source class="image-display">
-                                <a class="link"><img class="image"></a>
-                            </picture>
-                        </figure>
-                    </li>
-                </template>
 
         <!-- YouTube, Vimeo, etc. -->
             <template id="video-embed-block">
@@ -114,43 +90,7 @@
                     </figure>
                 </li>
             </template>
-
-        <!-- Links (saved sites). -->
-            <template id="link-block">
-                <li>
-                    <figure class="link-block">
-                        <picture>
-                            <source class="image-display">
-                            <a class="link"><img class="image"></a>
-                        </picture>
-                    </figure>
-                </li>
-            </template>
-
-        <!-- Spotify, Soundcloud, etc. -->
-                <template id="audio-embed-block">
-                    <li>
-                        <figure class="audio-embed"> <!-- You can use the container classes to style a whole type. -->
-                            <picture>
-                                <source class="image-display">
-                                <a class="link"><img class="image"></a>
-                            </picture>
-                        </figure>
-                    </li>
-                </template>
-
-        <!-- Uploaded audio files. -->
-                <template id="audio-file-block">
-                    <li>
-                        <figure class="audio-file-block">
-                            <picture>
-                                <source class="image-display">
-                                <a class="link"><img class="image"></a>
-                            </picture>
-                            <audio class="audio" controls></audio>
-                        </figure>
-                    </li>
-                </template>
+            
             </div>
 
             <!-- BOTTOM NAVIGATION FOR MOBILE -->
@@ -172,12 +112,12 @@
                     function scrollFunction() {
                     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) 
                     {
-                        document.getElementById("headertwo").style.fontSize = "19vw";
-                        document.getElementById("headertwo").style.lineHeight = "18vw";
+                        document.getElementById("header").style.fontSize = "19vw";
+                        document.getElementById("header").style.lineHeight = "18vw";
                     } 
                     else {
-                        document.getElementById("headertwo").style.fontSize = "47vw";
-                        document.getElementById("headertwo").style.lineHeight = "40vw";
+                        document.getElementById("header").style.fontSize = "47vw";
+                        document.getElementById("header").style.lineHeight = "40vw";
                     }
                     }    
             </script>
