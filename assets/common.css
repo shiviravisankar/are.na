@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Familjen+Grotesk:wght@400;700&display=swap');
-
 :root{
     --body-copy:17px;
     --body-copy-line-height: calc(var(--body-copy)*1.2);
@@ -8,22 +6,42 @@
     --main-heading-line-height: calc(var(--main-heading));
 }
 
+/*FONT*/
+@font-face 
+{
+    font-family: 'Monigue';
+    src: url('../assets/fonts/Monigue.woff2') format('woff2'),
+         url('../assets/fonts/Monigue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Tabular-Variable';
+    src: url('../assets/fonts/Tabular-Variable.woff2') format('woff2'),
+         url('../assets/fonts/Tabular-Variable.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     box-sizing: border-box;
     margin: auto;
     padding: auto;
     width: 80%;
-    font-family: 'Familjen Grotesk', serif;
+    font-family: 'Tabular-Variable';
 }
+
 /*HEADING*/
 #header{
     display: block;
     background-color: white;
-    font-family: 'Bebas Neue', serif;
+    font-family: 'Monigue';
     position: sticky;
     top: 0em;
-    font-size: 47vw;
-    line-height: 40vw;
+    font-size: 54vw;
+    line-height: 50vw;
     padding-top: 50px;
     padding-bottom: 20px;
     transition: 2s;
@@ -34,7 +52,7 @@ body {
 #headertwo{
     display: block;
     background-color: white;
-    font-family: 'Bebas Neue', serif;
+    font-family: 'Monigue';
     position: sticky;
     top: 0em;
     font-size: 47vw;
@@ -232,11 +250,12 @@ body {
     .channel-title{
         position: relative;
         display: block;
-        font-size: 14vw;
+        font-size: 16vw;
         line-height: 10vw;
-        font-family: 'Bebas Neue', serif;
+        font-family: 'Monigue';
         margin-bottom: 50px;
         margin-top: -50px;
+        text-transform: uppercase;
     }
 
     .media{
@@ -318,7 +337,6 @@ body {
 
     .active{
         font-size: 40px;
-        font-weight: bold;
         color: black;
     }
 }
