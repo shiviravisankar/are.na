@@ -1,19 +1,20 @@
+/*FONT*/
+@font-face 
+{
+    font-family: 'Bebas Neue';
+    src: url('../assets/fonts/BebasNeue-Regular.woff2') format('woff2'),
+        url('../assets/fonts/BebasNeue-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root{
     --body-copy:17px;
     --body-copy-line-height: calc(var(--body-copy)*1.2);
 
     --main-heading: 25vw;
     --main-heading-line-height: calc(var(--main-heading));
-}
-
-/*FONT*/
-@font-face 
-{
-    font-family: 'Monigue';
-    src: url('../assets/fonts/Monigue.woff2') format('woff2'),
-         url('../assets/fonts/Monigue.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face 
@@ -37,7 +38,7 @@ body {
 #header{
     display: block;
     background-color: white;
-    font-family: 'Monigue';
+    font-family: 'Bebas Neue';
     position: sticky;
     top: 0em;
     font-size: 54vw;
@@ -52,7 +53,7 @@ body {
 #headertwo{
     display: block;
     background-color: white;
-    font-family: 'Monigue';
+    font-family: 'Bebas Neue';
     position: sticky;
     top: 0em;
     font-size: 47vw;
@@ -250,9 +251,9 @@ body {
     .channel-title{
         position: relative;
         display: block;
-        font-size: 16vw;
+        font-size: 14vw;
         line-height: 10vw;
-        font-family: 'Monigue';
+        font-family: 'Bebas Neue';
         margin-bottom: 50px;
         margin-top: -50px;
         text-transform: uppercase;
